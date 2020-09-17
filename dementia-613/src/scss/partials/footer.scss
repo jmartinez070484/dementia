@@ -1,0 +1,37 @@
+footer {
+	padding:40px 0 40px 0;
+	width:100%;
+
+	.container {
+		.row {
+			.col-12 {
+				font-family:$lato;
+				line-height:120px;
+
+				img {
+					float:left;
+				}
+
+				ul {
+					float:right;
+
+					li {
+						margin:0 0 0 40px;
+						float:left;
+
+						a {
+							font-weight:700;
+							font-size:18px;
+							color:#FFFFFF;
+							letter-spacing:-0.36px;
+						}
+
+						&:first-child {
+							margin:0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
