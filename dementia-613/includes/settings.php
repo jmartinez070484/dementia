@@ -1,6 +1,6 @@
 <?php 
 
-$tabs = ['general'=>'General','api'=>'API Keys'];
+$tabs = ['general'=>'General','contact'=>'Contact','api'=>'API Keys'];
 $tab = isset($_GET['tab']) && array_key_exists($_GET['tab'],$tabs) ? $_GET['tab'] : 'general';
 $adminUrl = admin_url('admin.php?page=settings');
 
@@ -93,6 +93,20 @@ $adminUrl = admin_url('admin.php?page=settings');
 								</div>
 							</div>
 						</div>					
+					</div>
+				</div>
+			</div>
+			<div id="contact" class="settings-tab-content <?php if($tab === 'contact'){ echo 'active'; } ?>">
+				<div class="fields-content">
+					<div class="field-group">
+						<div class="field-column col-12 input">
+							<div class="field-legend">
+								<span>Contact Email Address</span>
+							</div>
+							<div class="field">
+								<input name="contact_email" type="text" value="<?php echo get_option('contact_email'); ?>" autocomplete="off" />
+							</div>
+						</div>			
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,277 @@
+a {
+	&.directory-btn {
+		display:inline-block;
+		margin:10px 0 10px 0;
+		padding:0 15px 0 15px;
+		height:70px;
+		font-weight:bold;
+		font-size:20px;
+		color:#FFF;
+		text-decoration:none!important;
+		line-height:55px;
+		background:#3CAF46;
+		border:6px solid #0F6C17;
+
+		&:before {
+			display:inline-block;
+			width:24px;
+			height:56px;
+			background:url('../images/bg-category-icon.png') no-repeat center center/contain;
+			margin:0 10px 0 0;
+			float:left;
+			content:'';
+		}
+	}
+}
+
+form {
+	&[name="contact"] {
+		margin:20px 0 0 0;
+		width:100%;
+
+		fieldset {
+			display:block;
+			margin:0 0 30px 0;
+			width:100%;
+
+			&:last-child {
+				margin:40px 0 0 0;
+			}
+
+			label {
+				display:block;
+				margin:0 0 20px 0;
+				font-size:13px;
+				font-weight:bold;
+				color:#181818;
+				text-transform:uppercase;
+			}
+
+			textarea {
+				padding:0 10px 0 10px;
+				width:100%;
+				min-height:250px;
+				line-height:44px;
+				background:#FFF;
+				border:1px solid #D8D8D8;
+			}
+
+			input {
+				padding:0 10px 0 10px;
+				width:100%;
+				height:44px;
+				line-height:44px;
+				background:#FFF;
+				border:1px solid #D8D8D8;
+			}
+
+			button {
+				padding:0 20px 0 20px;
+				height:56px;
+				font-size:18px;
+				font-weight:bold;
+				color:#FFF;
+				border:6px solid #5D5D5D;
+				background:#777777;
+				cursor:pointer;
+
+				&:before {
+					@include fa-free(900);
+					margin:0 16px 0 0;
+					content:'\f061';
+				}
+			}
+
+			&.invalid {
+				input {
+					border:1px solid #C00000;
+					background:#FFF4F4;
+
+					&[type="radio"] { 
+						& + label {
+							&:before {
+								border-color:#C00000;
+							}
+						}
+					}
+				}
+				textarea {
+					border:1px solid #C00000;
+					background:#FFF4F4;
+				}
+
+				&:after {
+					display:block;
+					margin:10px 0 0 0;
+					font-size:13px;
+					font-weight:bold;
+					color:#D80000;
+					content:'This is a required';
+				}
+			}
+		}
+	}
+	&[name="add-resource"] {
+		width:100%;
+
+		hr {
+			margin:30px 0 30px 0;
+			border-top:1px solid #D8D8D8;
+		}
+
+		fieldset {
+			display:block;
+			margin:0 0 30px 0;
+			width:100%;
+
+			&:last-child {
+				margin:40px 0 0 0;
+			}
+
+			strong {
+				font-size:24px;
+				font-weight:900;
+				color:#171614;
+			}
+
+			p {
+				margin:20px 0 10px 0;
+				font-size:16px;
+				color:#171614;
+				line-height:24px;
+			}
+
+			label, span {
+				font-size:13px;
+				font-weight:bold;
+				color:#181818;
+				text-transform:uppercase;
+			}
+
+			span {
+				display:block;
+				margin:0 0 10px 0;
+			}
+
+			small {
+				display:block;
+				margin:0 0 10px 0;
+				font-size:16px;
+				line-height:19px;
+				color:#777777;
+			}
+
+			textarea {
+				padding:0 10px 0 10px;
+				width:100%;
+				min-height:250px;
+				line-height:44px;
+				background:#FFF;
+				border:1px solid #D8D8D8;
+			}
+
+			input {
+				padding:0 10px 0 10px;
+				width:100%;
+				height:44px;
+				line-height:44px;
+				background:#FFF;
+				border:1px solid #D8D8D8;
+
+				&[type="radio"] {
+					display:none;
+
+					& + label {
+						position:relative;
+						margin:10px 0 0 0;
+						padding:0 0 0 26px;
+						width:100%;
+						font-size:16px;
+						font-weight:normal;
+						color:#777777;
+						text-transform:none;
+
+						&:before {
+							position:absolute;
+							top:0;
+							left:0;
+							width:16px;
+							height:16px;
+							border-radius:8px 8px;
+							border:1px solid #777777;
+							cursor:pointer;
+							content:'';
+						}
+					}
+
+					&[name="online"] + label {
+						margin:10px 30px 0 0;
+						width:auto;
+					}
+
+					&:checked + label {
+						&:before {
+							border:1px solid #3CAF46;
+							background:#3CAF46;
+						}
+						&:after {
+							position:absolute;
+							top:5px;
+							left:5px;
+							width:6px;
+							height:6px;
+							border-radius:3px 3px;
+							background:#FFF;
+							content:'';
+						}
+					}
+				}
+			}
+
+			button {
+				padding:0 20px 0 20px;
+				height:56px;
+				font-size:18px;
+				font-weight:bold;
+				color:#FFF;
+				border:6px solid #5D5D5D;
+				background:#777777;
+				cursor:pointer;
+
+				&:before {
+					@include fa-free(900);
+					margin:0 16px 0 0;
+					content:'\f061';
+				}
+			}
+
+			&.invalid {
+				input {
+					border:1px solid #C00000;
+					background:#FFF4F4;
+
+					&[type="radio"] { 
+						& + label {
+							&:before {
+								border-color:#C00000;
+							}
+						}
+					}
+				}
+				textarea {
+					border:1px solid #C00000;
+					background:#FFF4F4;
+				}
+
+				&:after {
+					display:block;
+					margin:10px 0 0 0;
+					font-size:13px;
+					font-weight:bold;
+					color:#D80000;
+					content:'This is a required';
+				}
+			}
+		}
+	}
+}

@@ -14,6 +14,17 @@ class EncoreHelper {
 
 	/*
 	
+		Get template
+		
+	*/
+	public function template(){
+		$id = get_the_ID();
+		
+		return basename(get_page_template($id));
+	}
+
+	/*
+	
 		Get Logo
 		
 	*/

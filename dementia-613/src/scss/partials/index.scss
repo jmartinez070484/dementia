@@ -1,0 +1,234 @@
+.page-template-index {
+	.featured {
+		padding:70px 0 20px 0;
+		width:100%;
+
+		.container {
+			.row {
+				.col-12 {
+					&:first-child, &:last-child {
+						margin:0 0 35px 0;
+						text-align:left;
+
+						p {
+							margin:0;
+							font-size:20px;
+							color:#171614;
+							letter-spacing:-0.48px;
+							line-height:42px;
+
+							a {
+								display:inline-block;
+								margin:0 0 0 10px;
+								font-weight:bold;
+								color: #0F6C17;
+
+								&:before {
+									@include fa-free(900);
+									margin:0 10px 0 0;
+									color: #0F6C17;
+									content:'\f03a';
+								}
+							}
+						}
+					}
+
+					&:last-child {
+						margin:-20px 0 10px 0;
+						text-align:right;
+					}
+
+					.resource-item {
+						margin:0 0 50px 0;
+						padding:50px 50px 140px 50px;
+						width:100%;
+						text-align:left;
+						background:#FFF;
+						border:1px solid #C3C3C3;
+
+						ul {
+							position:absolute;
+							top:-18px;
+							left:20px;
+							
+							li {
+								font-size:13px;
+								color: #FFFFFF;
+								letter-spacing:-0.26px;
+								text-transform:uppercase;
+
+								span {
+									display:inline-block;
+									padding:0 30px 0 30px;
+									line-height:36px;
+									border-radius:18px 18px;
+								}
+							}
+						}
+
+						h2 {
+							font-size:36px;
+							color:#171614;
+							letter-spacing:-0.72px;
+
+							a {
+								color:#171614;
+							}
+						}
+
+						p {
+							font-size:20px;
+							color:#171614;
+							letter-spacing:-0.4px;
+							line-height:28px;
+
+							span {
+								position:relative;
+								display:inline-block;
+								margin:0 10px 0 0;
+								font-family:Helvetica;
+								font-size:18px;
+								color:#020202;
+								letter-spacing:-0.36px;
+								line-height:24px;
+
+								i {
+									margin:0 5px 0 0;
+								}
+
+								&:nth-child(2) {
+									padding:0 0 10px 10px;
+
+									&:before {
+										position:absolute;
+										top:9px;
+										left:-4px;
+										display:inline-block;
+										width:6px;
+										height:6px;
+										background:#020202;
+										border-radius:3px 3px;
+										content:'';
+									}
+								}
+							}
+
+							+ a {
+								position:absolute;
+								bottom:30px;
+								right:50px;
+								width:30px;
+								height:42px;
+								background:url('../images/bg-resource-arrow.png') no-repeat center center/contain;
+							}
+						}
+
+						small {
+							position:absolute;
+							bottom:30px;
+							left:50px;
+							font-size:14px;
+							color:#000;
+
+							&:before {
+								font-size:14px;
+								font-weight:bold;
+								content:'Filed Under: ';
+							}
+						}
+					}
+
+					&.main {
+						.resource-item {
+							h2 {
+								width:50%;
+							}
+
+							p {
+								width:50%;
+								float:left;
+
+								&:nth-child(4) {
+									margin:-50px 20px 0 0;
+									width:40%;
+									float:right;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.subcontent {
+		padding:120px 0 120px 0;
+		width:100%;
+
+		.container {
+			.row {
+			 	.col-12 {
+			 		text-align:left;
+			 		color:#FFF;
+
+			 		h1,h2,h3,h4,h5 {
+			 			font-weight:900;
+						font-size:44px;
+						letter-spacing:-0.88px;
+						line-height:54px;
+			 		}
+
+			 		p {
+			 			font-size:24px;
+						letter-spacing:-0.48px;
+						line-height:32px;
+
+						a {
+							padding:0 0 0 20px;
+							color:#FFF;
+							background:url('../images/bg-p-link.png') no-repeat 0 8px;
+						}
+			 		}
+			 	}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 766px){
+	.page-template-index {
+		.featured {
+			.container {
+				.row {
+					.col-12 {
+						.resource-item {
+							padding:25px 25px 70px 25px;
+
+							a {
+								bottom:20px;
+								right:25px;
+							}
+						}
+						&.main {
+							.resource-item { 
+								display:inline-block;
+
+								h2 {
+									width:100%;
+								}
+								p {
+									width:100%;
+
+									&:nth-child(4) {
+										width:100%;
+										margin:0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

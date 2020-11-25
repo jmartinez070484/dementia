@@ -23,7 +23,7 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "resource-category"
+                "value": "category"
             }
         ]
     ],
@@ -35,5 +35,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1599405250
+    "modified": 1604478980
 }
