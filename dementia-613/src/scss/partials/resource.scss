@@ -344,12 +344,34 @@
 				}
 			}
 		}
+		.details {
+			margin-top:70px;
+
+			.container {
+				.row {
+					.col-12 {
+						h1 {
+							font-size:32px;
+							line-height:32px;
+						}
+						p {
+							font-size:16px;
+						}
+					}
+				}
+			}
+		}
 		.description {
 			.container {
 				.row {
 					.col-12 {
 						.contact-info {
 							display:none;
+						}
+						.description-copy {
+							p {
+								font-size:18px;
+							}
 						}
 					}
 				}

@@ -184,8 +184,13 @@
 						line-height:32px;
 
 						a {
+							display:inline-block;
+							margin:20px 0 20px 0;
 							padding:0 0 0 20px;
 							color:#FFF;
+							font-family:Helvetica;
+							font-size:18px;
+							letter-spacing:-0.36px;
 							background:url('../images/bg-p-link.png') no-repeat 0 8px;
 						}
 			 		}
@@ -212,6 +217,7 @@
 						&.main {
 							.resource-item { 
 								display:inline-block;
+								padding:25px 25px 100px 25px;
 
 								h2 {
 									width:100%;
@@ -223,10 +229,36 @@
 										width:100%;
 										margin:0;
 									}
+
+									+ a {
+										bottom:35px;
+										right:25px;
+									}
+								}
+								small {
+									bottom:50px;
+									left:25px;
 								}
 							}
 						}
 					}
+				}
+			}
+		}
+		.subcontent {
+			background-position:left top!important;
+
+			.container {
+				.row {
+				 	.col-12 {
+				 		h1,h2,h3,h4,h5 {
+				 			font-size:32px;
+				 			line-height:40px;
+				 		}
+				 		p {
+				 			font-size:20px;
+				 		}
+				 	}
 				}
 			}
 		}

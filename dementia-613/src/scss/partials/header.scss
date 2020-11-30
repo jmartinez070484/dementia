@@ -133,6 +133,9 @@ header {
 
 @media only screen and (max-width: 766px){
 	header {
+		padding-top:60px;
+		padding-bottom:60px;
+
 		.banner {
 			height:auto;
 
@@ -147,6 +150,22 @@ header {
 				}
 			}
 		}
+		.dir {
+			right:15px;
+			left:15px;
+
+			a {
+				&.directory-btn {
+					width:100%;
+					height:60px;
+					line-height:45px;
+
+					&:before {
+						height:46px;
+					}
+				}
+			}
+		}
 		.navigation {
 			left:0;
 			line-height:50px;
@@ -154,6 +173,12 @@ header {
 
 			ul {
 				float:left;
+
+				li {
+					a {
+						font-size:14px;
+					}
+				}
 			}
 		}
 		.container {
@@ -168,6 +193,8 @@ header {
 	.page-template-index {
 		header {
 			height:auto;
+			padding-top:0;
+			padding-bottom:0;
 			
 			.container {
 				&:first-child {
