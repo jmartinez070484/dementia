@@ -480,6 +480,14 @@
 				&.content {
 					.row {
 						.col-12 {
+							h1,h2,h3,h4,h5 {
+								font-size:30px;
+							}
+
+							p {
+								font-size:15px;
+							}
+
 							&:last-child {
 								strong {
 									display:none;
@@ -509,8 +517,38 @@
 							margin-top:40px;
 
 							.resource-item {
+								padding:25px 25px 100px 25px;
+
+								ul {
+									li {
+										span {
+											padding:0 15px 0 15px;
+											font-size:12px;
+										}
+									}
+								}
+
+								h2 {
+									width:100%;
+									font-size:30px;
+								}
+								p {
+									width:100%;
+
+									&:nth-child(4) {
+										width:100%;
+										margin:0;
+										font-size:15px;
+									}
+
+									+ a {
+										bottom:35px;
+										right:25px;
+									}
+								}
 								small {
-									bottom:100px;
+									bottom:50px;
+									left:25px;
 								}
 							}
 						}

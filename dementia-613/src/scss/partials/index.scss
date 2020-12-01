@@ -203,9 +203,16 @@
 @media only screen and (max-width: 766px){
 	.page-template-index {
 		.featured {
+			padding:35px 0 20px 0;
+
 			.container {
 				.row {
 					.col-12 {
+						&:first-child {
+							p {
+								font-size:16px;
+							}
+						}
 						.resource-item {
 							padding:25px 25px 70px 25px;
 
@@ -216,9 +223,6 @@
 						}
 						&.main {
 							.resource-item { 
-								display:inline-block;
-								padding:25px 25px 100px 25px;
-
 								h2 {
 									width:100%;
 								}
@@ -235,10 +239,42 @@
 										right:25px;
 									}
 								}
-								small {
-									bottom:50px;
-									left:25px;
+							}
+						}
+						.resource-item { 
+							display:inline-block;
+							padding:25px 25px 100px 25px;
+
+							ul {
+								li {
+									span {
+										padding:0 15px 0 15px;
+										font-size:12px;
+									}
 								}
+							}
+
+							h2 {
+								width:100%;
+								font-size:30px;
+							}
+							p {
+								width:100%;
+
+								&:nth-child(4) {
+									width:100%;
+									margin:0;
+									font-size:15px;
+								}
+
+								+ a {
+									bottom:35px;
+									right:25px;
+								}
+							}
+							small {
+								bottom:50px;
+								left:25px;
 							}
 						}
 					}
